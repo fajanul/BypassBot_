@@ -37,7 +37,7 @@ def gdtot_dl(url):
     info = parse_info(res)
     info['src_url'] = url
     
-    res = client.get(f"https://new.gdtot.top/dld?id={url.split('/')[-1]}")
+    res = client.get(f"https://new2.gdtot.sbs/dld?id={url.split('/')[-1]}")
 
     try:
         url = re.findall('URL=(.*?)"', res.text)[0]
